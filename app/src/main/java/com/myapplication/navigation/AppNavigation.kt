@@ -26,7 +26,7 @@ fun AppNavigation() {
         }
         composable(
             route = AppScreens.RecipeDetailScreen.route,
-            arguments = listOf(navArgument("recipeId") { }) // No type needed, handled by SavedStateHandle
+            arguments = listOf(navArgument("recipeId") { })
         ) {
             RecipeDetailScreen()
         }

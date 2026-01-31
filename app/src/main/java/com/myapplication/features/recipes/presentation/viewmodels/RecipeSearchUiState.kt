@@ -6,5 +6,5 @@ data class RecipeSearchUiState(
     val isLoading: Boolean = false,
     val recipes: List<Recipe> = emptyList(),
     val error: String? = null,
-    val noResults: Boolean = false // New state to indicate no results
+    val noResults: Boolean = false
 )

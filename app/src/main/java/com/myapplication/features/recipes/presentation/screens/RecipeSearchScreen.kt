@@ -49,7 +49,7 @@ fun RecipeSearchScreen(
             }
         }
     ),
-    onRecipeClick: (String) -> Unit // Callback to notify when a recipe is clicked
+    onRecipeClick: (String) -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()
     var query by remember { mutableStateOf("") }

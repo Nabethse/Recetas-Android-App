@@ -30,7 +30,6 @@ class RecipeSearchViewModel(
                     it.copy(
                         isLoading = false,
                         recipes = recipes,
-                        // Set noResults to true if the list is empty
                         noResults = recipes.isEmpty()
                     )
                 }
@@ -39,7 +38,7 @@ class RecipeSearchViewModel(
                     it.copy(
                         isLoading = false,
                         error = e.message ?: "An unexpected error occurred",
-                        recipes = emptyList() // Clear previous results on error
+                        recipes = emptyList()
                     )
                 }
             }

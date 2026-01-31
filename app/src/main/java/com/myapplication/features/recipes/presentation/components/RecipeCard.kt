@@ -25,7 +25,7 @@ fun RecipeCard(
     Card(
         modifier = modifier
             .padding(8.dp)
-            .clickable(onClick = onClick) // Make the whole card clickable
+            .clickable(onClick = onClick)
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             AsyncImage(
